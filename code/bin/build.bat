@@ -30,3 +30,9 @@ popd
 %build_root%\build
 :END
 if %ERRORLEVEL% neq 0 (set FirstError=1)
+
+pushd %custom_root%
+pushd 4coder_fleury
+call build.bat
+popd
+popd
